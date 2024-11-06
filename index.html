@@ -486,49 +486,6 @@
     <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1258238/t/0"></script>
   </div>
 
-  <!-- Tombol WhatsApp -->
-  <div class="whatsapp-button" onclick="openChat()">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    Chat WhatsApp
-  </div>
-
-<!-- Modal Chat -->
-<div class="chat-modal" id="chatModal">
-    <div class="chat-header">
-        <h4>Live Chat WhatsApp</h4>
-        <span class="close-chat" onclick="closeChat()">&times;</span>
-    </div>
-    <div class="chat-body">
-        <textarea id="messageInput" rows="4" placeholder="Ketik pesan Anda di sini..."></textarea>
-        <button class="send-button" onclick="sendMessage()">Kirim</button>
-    </div>
-</div>
-
-<script>
-    // Fungsi untuk membuka modal chat
-    function openChat() {
-        document.getElementById("chatModal").style.display = "block";
-    }
-
-    // Fungsi untuk menutup modal chat
-    function closeChat() {
-        document.getElementById("chatModal").style.display = "none";
-    }
-
-    // Fungsi untuk mengirim pesan ke WhatsApp
-    function sendMessage() {
-        var message = document.getElementById("messageInput").value;
-        if (message) {
-            var phoneNumber = "6287866885151"; // Ganti dengan nomor WhatsApp Anda
-            var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, "_blank");
-        } else {
-            alert("Harap ketik pesan terlebih dahulu.");
-        }
-    }
-</script>
-  
-
 </body>
 
 </html>
